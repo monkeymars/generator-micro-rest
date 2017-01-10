@@ -33,16 +33,26 @@ module.exports = Generator.extend({
   },
 
   writing: function () {
+
+    this.fs.copy(
+      this.templatePath('./package.json'),
+      this.destinationPath('./package.json' )
+    );
+
     this.fs.copyTpl(
       this.templatePath('./server'),
-      this.destinationPath('./' + this.props.service  ), {
+      this.destinationPath('./microservices/' + this.props.service  ), {
         service: this.props.service,
         port: this.props.port
       }
     );
+
   },
 
   install: function () {
-    this.installDependencies();
+    this.installDependencies({
+      npm: true,
+      bower: false
+    });
   }
 });
