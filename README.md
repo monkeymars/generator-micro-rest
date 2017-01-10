@@ -19,7 +19,7 @@ yo micro-rest
 ## Run restify server
 
 ```bash
-node microservices/ervice0/server.js
+node microservices/service0/server.js
 ```
 
 ## Getting To Know Yeoman
