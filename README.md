@@ -11,7 +11,6 @@ Restify exists to let you build "strict" API services that are maintanable and o
 
 In short, I wrote restify as I needed a framework that gave me absolute control over interactions with HTTP and full observability into the latency and characteristics of my applications. If you don't need that, or don't care about those aspect(s), then it's probably not for you.
 
-For real time chat, discussion and support, join the #restify IRC channel on irc.freenode.net.
 
 ## Installation
 
