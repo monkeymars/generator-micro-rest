@@ -3,9 +3,9 @@
 
 ## Why use restify and not express?
 
-From API Guide | Restify Documentation. I get asked this more than anything else, so I'll just get it out of the way up front.
+> From API Guide | Restify Documentation.
 
-Express' use case is targeted at browser applications and contains a lot of functionality, such as templating and rendering, to support that. Restify does not.
+I get asked this more than anything else, so I'll just get it out of the way up front. Express' use case is targeted at browser applications and contains a lot of functionality, such as templating and rendering, to support that. Restify does not.
 
 Restify exists to let you build "strict" API services that are maintanable and observable. Restify comes with automatic DTrace support for all your handlers, if you're running on a platform that supports DTrace.
 
