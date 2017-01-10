@@ -1,6 +1,18 @@
 # generator-micro-rest [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > generate simple server with restify
 
+## Why use restify and not express?
+
+From API Guide | Restify Documentation. I get asked this more than anything else, so I'll just get it out of the way up front.
+
+Express' use case is targeted at browser applications and contains a lot of functionality, such as templating and rendering, to support that. Restify does not.
+
+Restify exists to let you build "strict" API services that are maintanable and observable. Restify comes with automatic DTrace support for all your handlers, if you're running on a platform that supports DTrace.
+
+In short, I wrote restify as I needed a framework that gave me absolute control over interactions with HTTP and full observability into the latency and characteristics of my applications. If you don't need that, or don't care about those aspect(s), then it's probably not for you.
+
+For real time chat, discussion and support, join the #restify IRC channel on irc.freenode.net.
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-micro-rest using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
