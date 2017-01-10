@@ -1,0 +1,22 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/rikosaputro/.nvm/versions/node/v6.5.0/bin/node',
+1 verbose cli   '/Users/rikosaputro/.nvm/versions/node/v6.5.0/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   'patch' ]
+2 info using npm@3.10.3
+3 info using node@v6.5.0
+4 error version No valid package.json found
+5 verbose stack SyntaxError: Unexpected token ] in JSON at position 461
+5 verbose stack     at Object.parse (native)
+5 verbose stack     at /Users/rikosaputro/.nvm/versions/node/v6.5.0/lib/node_modules/npm/lib/version.js:114:19
+5 verbose stack     at /Users/rikosaputro/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:445:3)
+6 verbose cwd /Users/rikosaputro/Devel/generator/generator-micro-rest
+7 error Darwin 15.6.0
+8 error argv "/Users/rikosaputro/.nvm/versions/node/v6.5.0/bin/node" "/Users/rikosaputro/.nvm/versions/node/v6.5.0/bin/npm" "version" "patch"
+9 error node v6.5.0
+10 error npm  v3.10.3
+11 error Unexpected token ] in JSON at position 461
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
