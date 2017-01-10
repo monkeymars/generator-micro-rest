@@ -1,7 +1,7 @@
 {
   "name": "generator-micro-rest",
   "version": "0.0.2",
-  "description": "generate microservices using restify",
+  "description": "generate simple server with restify",
   "homepage": "https://micorrest.ullem.com",
   "author": {
     "name": "akungery",
@@ -13,7 +13,10 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "generator restify",
+    "microservices",
+    "micro-rest",
   ],
   "dependencies": {
     "chalk": "^1.1.3",
