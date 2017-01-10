@@ -16,7 +16,7 @@
     "yeoman-generator",
     "generator restify",
     "microservices",
-    "micro-rest",
+    "micro-rest"
   ],
   "dependencies": {
     "chalk": "^1.1.3",
