@@ -1,4 +1,4 @@
-# generator-micro-rest [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-micro-rest [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > generate microservices using restify
 
 ## Installation
@@ -14,6 +14,12 @@ Then generate your new project:
 
 ```bash
 yo micro-rest
+```
+
+## Run restify server
+
+```bash
+node service0/server.js 
 ```
 
 ## Getting To Know Yeoman
