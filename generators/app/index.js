@@ -1,4 +1,5 @@
 'use strict';
+
 var Generator = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
@@ -9,14 +10,13 @@ module.exports = Generator.extend({
     this.log(yosay(
       'Welcome to the wondrous ' + chalk.red('generator-micro-rest') + ' generator!'
     ));
-
     var prompts = [{
       type: 'input',
       name: 'service',
       message: 'type service name:',
       default: 'service0'
     }, {
-      when: function(props) {
+      when: function (props) {
         if (props.service) {
           return true;
         }
@@ -25,7 +25,7 @@ module.exports = Generator.extend({
       name: 'port',
       message: 'type service port:',
       default: '3000'
-    }]
+    }];
 
     return this.prompt(prompts).then(function (props) {
       this.props = props;
@@ -33,20 +33,18 @@ module.exports = Generator.extend({
   },
 
   writing: function () {
-
     this.fs.copy(
       this.templatePath('./package.json'),
-      this.destinationPath('./package.json' )
+      this.destinationPath('./package.json')
     );
 
     this.fs.copyTpl(
       this.templatePath('./server'),
-      this.destinationPath('./microservices/' + this.props.service  ), {
+      this.destinationPath('./microservices/' + this.props.service), {
         service: this.props.service,
         port: this.props.port
       }
     );
-
   },
 
   install: function () {
