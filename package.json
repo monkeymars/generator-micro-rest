@@ -2,7 +2,7 @@
   "name": "generator-micro-rest",
   "version": "1.0.4",
   "description": "generate simple server with restify",
-  "homepage": "https://micorrest.ullem.com",
+  "homepage": "https://microrest.ullem.com",
   "author": {
     "name": "akungery",
     "email": "monk3y.mars@gmail.com",
