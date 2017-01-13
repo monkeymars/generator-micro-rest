@@ -10,8 +10,10 @@ server.use(plugins.acceptParser(server.acceptable));
 server.use(plugins.queryParser());
 server.use(plugins.bodyParser());
 
-server.get('/echo/:name', function (req, res, next) {
-  res.send(req.params);
+require('./routes/movie.route')(server);
+
+server.get('/', function (req, res, next) {
+  res.send('Server is running');
   return next();
 });
 
