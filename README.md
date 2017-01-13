@@ -1,4 +1,7 @@
-# generator-micro-rest [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-micro-rest
+[![NPM](https://nodei.co/npm/generator-micro-rest.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/generator-micro-rest/)
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > generate simple server with restify
 
 ## Why use restify and not express?
