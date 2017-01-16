@@ -1,6 +1,6 @@
 {
   "name": "generator-micro-rest",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "generate simple server with restify",
   "homepage": "https://microrest.ullem.com",
   "author": {
