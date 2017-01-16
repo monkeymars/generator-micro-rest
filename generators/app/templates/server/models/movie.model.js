@@ -1,6 +1,6 @@
 const mongoose = require('./../config');
 let Schema = mongoose.Schema;
-let movieSchema = new Schema({
+let baseSchema = new Schema({
   title: {
     type: String,
     required: true
@@ -15,5 +15,5 @@ let movieSchema = new Schema({
     default: Date.now
   }
 });
-const Movie = mongoose.model('Movie', movieSchema);
-module.exports = Movie;
+const baseModel = mongoose.model('<%=model%>', baseSchema);
+module.exports = baseModel;

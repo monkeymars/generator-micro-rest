@@ -1,8 +1,8 @@
-const routeMovie = require('../controllers/movie.controller');
+const routeBase = require('../controllers/<%=model%>.controller');
 module.exports = function (server) {
-  server.post('/newMovie', routeMovie.new);
-  server.get('/getMovie', routeMovie.get);
-  server.get('/getMovie/:id', routeMovie.getOne);
-  server.put('/updateMovie/:id', routeMovie.update);
-  server.get('/deleteMovie/:id', routeMovie.delete);
+  server.post('/new_<%=model%>', routeBase.new);
+  server.get('/get_<%=model%>', routeBase.get);
+  server.get('/get_<%=model%>/:id', routeBase.getOne);
+  server.put('/update_<%=model%>/:id', routeBase.update);
+  server.get('/delete_<%=model%>/:id', routeBase.delete);
 };

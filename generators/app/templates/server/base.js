@@ -12,8 +12,6 @@ server.use(plugins.acceptParser(server.acceptable));
 server.use(plugins.queryParser());
 server.use(plugins.bodyParser());
 
-require('./routes/<%=model%>.route')(server);
-
 server.get('/', function (req, res, next) {
   res.send('Server is running');
   return next();
