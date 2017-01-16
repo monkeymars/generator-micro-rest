@@ -17,11 +17,10 @@ In short, I wrote restify as I needed a framework that gave me absolute control 
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-micro-rest using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
-
+First, install [Yeoman](http://yeoman.io) and generator-micro-rest using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/) and [MongoDB](https://docs.mongodb.com/manual/installation/)).
 ```bash
-npm install -g yo
-npm install -g generator-micro-rest
+
+npm install -g yo generator-micro-rest
 ```
 
 Then generate your new project:
@@ -30,10 +29,18 @@ Then generate your new project:
 yo micro-rest
 ```
 
-## Run restify server
+![alt tag](https://i.imgur.com/6hVYuNq.png)
 
+## Run restify server
 ```bash
-node microservices/service0/server.js
+node microservices/Movie/server.js
+```
+```bash
+POST  api/new_Movie           - Create New Movie
+GET   api/get_Movie           - Get All Movie
+GET   api/get_Movie/:id       - Get Movie by Id
+PUT   api/update_Movie/:id    - Update Movie by Id
+GET   api/delete_Movie/:id    - Delete Movie by Id
 ```
 
 ## Getting To Know Yeoman
